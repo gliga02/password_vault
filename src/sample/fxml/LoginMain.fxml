@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="580.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="183.0" layoutY="91.0" prefHeight="32.0" prefWidth="214.0" promptText="Username" style="-fx-border-color: #000; -fx-font-size: 14px; -fx-prompt-text-fill: black;" />
+      <Button layoutX="485.0" layoutY="23.0" mnemonicParsing="false" onAction="#signUp" prefHeight="32.0" prefWidth="81.0" style="-fx-font-size: 14px; -fx-background-color: #000; -fx-border-color: #000; -fx-text-fill: #fff;" text="Sign Up">
+         <font>
+            <Font name="Mongolian Baiti" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="login" layoutX="323.0" layoutY="215.0" mnemonicParsing="false" onAction="#login" prefHeight="24.0" prefWidth="74.0" style="-fx-border-color: #000; -fx-background-color: #000; -fx-text-fill: #fff;" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <CheckBox fx:id="rememberMe" layoutX="183.0" layoutY="219.0" mnemonicParsing="false" text="Remember Me">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <PasswordField fx:id="password" layoutX="183.0" layoutY="143.0" prefHeight="32.0" prefWidth="214.0" promptText="Password" style="-fx-border-color: #000; -fx-font-size: 14px; -fx-prompt-text-fill: #000;" />
+      <Button layoutX="217.0" layoutY="320.0" mnemonicParsing="false" style="-fx-background-color: #fff;" text="Forgot Your Password?" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="183.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../password_icon.png" />
+         </image></ImageView>
+      <Label layoutX="234.0" layoutY="39.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="38.0" style="-fx-font-weight: bold;" text="VAULT">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="progressBar" fitHeight="67.0" fitWidth="84.0" layoutX="257.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../loading.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
